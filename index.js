@@ -1,16 +1,16 @@
-// Correção de exercício - Atividade Extra
-
-// Solicita um número através do prompt
-
-var numero = prompt("Digite um número:");
-
-// Converte o input para um número
-var numeroInt = parseInt(numero);
-
-
-// Verifica se está entre 10 e 50
-    if(numeroInt >= 10 && numero <= 50) {
-        alert("O número está entre 10 e 50!");
-    } else {
-        console.log("O número não está entre 10 e 50");
-    }
+function inserirPrecoDeCusto() {
+    let precoCusto = parseFloat(prompt("Insira o preço de custo:"));
+    return precoCusto;
+}
+function somarICMS(precoCusto) {
+    let taxaICMS = 0.18;
+    let icms = precoCusto * taxaICMS;
+    return icms;
+}
+function mostrarPrecoCalculado(precoCusto, icms) {
+    let precoCalculado = precoCusto + icms;
+    console.log("O preço calculado com ICMS é:", precoCalculado);
+}
+let precoCusto = inserirPrecoDeCusto();
+let icms = somarICMS(precoCusto);
+mostrarPrecoCalculado(precoCusto, icms);
