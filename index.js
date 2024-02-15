@@ -1,16 +1,19 @@
-function inserirPrecoDeCusto() {
-    let precoCusto = parseFloat(prompt("Insira o preço de custo:"));
-    return precoCusto;
+let quantidadeParcelas = parseInt(prompt("Digite a quantidade de parcelas:"));
+
+if (isNaN(quantidadeParcelas) || quantidadeParcelas <= 0) {
+    alert("Quantidade de parcelas inválida.");
+} else {
+    let valorTotal = parseFloat(prompt("Digite o valor total a ser parcelado:"));
+
+    if (isNaN(valorTotal) || valorTotal <= 0) {
+        alert("Valor total inválido.");
+    } else {
+        let valorParcela = valorTotal / quantidadeParcelas;
+
+        let parcelas = "";
+        for (let i = 1; i <= quantidadeParcelas; i++) {
+            parcelas += `Parcela ${i}: R$ ${valorParcela.toFixed(2)}\n`;
+        }
+        alert(`Valor de cada parcela (em ${quantidadeParcelas}x):\n${parcelas}`);
+    }
 }
-function somarICMS(precoCusto) {
-    let taxaICMS = 0.18;
-    let icms = precoCusto * taxaICMS;
-    return icms;
-}
-function mostrarPrecoCalculado(precoCusto, icms) {
-    let precoCalculado = precoCusto + icms;
-    console.log("O preço calculado com ICMS é:", precoCalculado);
-}
-let precoCusto = inserirPrecoDeCusto();
-let icms = somarICMS(precoCusto);
-mostrarPrecoCalculado(precoCusto, icms);
