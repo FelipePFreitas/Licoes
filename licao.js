@@ -164,5 +164,5 @@ let quantidadeParcelas = parseInt(prompt("Quantidade de parcelas ?"))
 let valorCompra = parseInt(prompt("Qual o valor do produto ?"))
 let valorParcela = valorCompra / quantidadeParcelas
 for ( let i = 1; i <= quantidadeParcelas; i++){
-    alert(`Parcela ${i}: R$ ${valorParcela}`);
+    console.log(`Parcela ${i}: R$ ${valorParcela}`);
 }
