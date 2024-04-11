@@ -105,3 +105,64 @@
 // }
 // console.log( resultado(10, 5, "/") )
 
+// function ehMultiplo(numero1, numero2){
+// 	if(numero1 % numero2 === 0){
+// 		return `${numero1} é múltiplo de ${numero2}`
+// 	} 
+// 	else {
+// 		return `${numero1} e ${numero2} não são múltiplos`
+// 	}
+// }
+
+// let numero1 = parseFloat(prompt("Digite o primeiro número"))
+// let numero2 = parseFloat(prompt("Digite o segundo número"))
+
+// let resultado = ehMultiplo(numero1, numero2)
+
+// alert(resultado)
+
+// function exibirNumerosMenores(numero) {
+//     if (numero < 1 || numero > 10) {
+//       console.log("O numero deve estar entre 1 e 10")
+//       return
+//     }
+//     for (let i = 1; i < numero; i++) {
+//       console.log(i)
+//     }
+//   }
+//   exibirNumerosMenores(4)
+
+
+// let numero = parseInt(prompt("Digite um numero"))
+// function calcfatorial(numero){
+//     let fatorial = 1
+//     let i = 1
+
+//     while(i<=numero){
+//     fatorial *= i;
+//     i++
+//     }
+//     alert("O fatorial de"+""+ numero + "é" +""+ fatorial)
+
+// }
+// calcfatorial(numero)
+
+// function teste(){
+//     let numero = parseInt(prompt("digite um numero"))
+// switch (numero != "sair"){
+//     case numero <= 10:
+//      console.log(numero + "numero entre 0 e 10");
+//         break;
+//     default:
+//         console.log("nenhum");       
+// }
+// }
+// teste()
+
+
+let quantidadeParcelas = parseInt(prompt("Quantidade de parcelas ?"))
+let valorCompra = parseInt(prompt("Qual o valor do produto ?"))
+let valorParcela = valorCompra / quantidadeParcelas
+for ( let i = 1; i <= quantidadeParcelas; i++){
+    alert(`Parcela ${i}: R$ ${valorParcela}`);
+}
