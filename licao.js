@@ -160,9 +160,61 @@
 // teste()
 
 
-let quantidadeParcelas = parseInt(prompt("Quantidade de parcelas ?"))
-let valorCompra = parseInt(prompt("Qual o valor do produto ?"))
-let valorParcela = valorCompra / quantidadeParcelas
-for ( let i = 1; i <= quantidadeParcelas; i++){
-    console.log(`Parcela ${i}: R$ ${valorParcela}`);
+// let quantidadeParcelas = parseInt(prompt("Quantidade de parcelas ?"))
+// let valorCompra = parseInt(prompt("Qual o valor do produto ?"))
+// let valorParcela = valorCompra / quantidadeParcelas
+// for ( let i = 1; i <= quantidadeParcelas; i++){
+//     console.log(`Parcela ${i}: R$ ${valorParcela}`);
+// }
+
+// let fruta = {
+//     nome: "banana",
+//     cor: "amarelo",
+//     peso: 150,
+//     tipo: "fruta"
+// }
+// fruta.nome = "maça";
+// fruta["cor"] = "vermelho";
+// // console.log(fruta)
+// console.log(fruta ["tipo"])
+
+// function fruta (nome,cor,peso,tipo){
+//     this.nome=nome
+//     this.cor=cor
+//     this.peso=peso
+//     this.tipo=tipo
+// }
+// let fruta1 = new fruta("banana","amarelo",150,"fruta")
+// let fruta2 = new fruta("maça","vermelho",90,"fruta")
+// console.log(fruta1)
+// console.log(fruta2)
+// console.log(fruta1.nome.length)
+// console.log(fruta2.cor.toUpperCase())
+// console.log(fruta1.tipo.toLowerCase())
+
+// let fruta = {
+//     nome: "banana",
+//     cor: "amarelo",
+//     peso: 150,
+//     tipo: "fruta"
+// }
+// for(let propriedade in fruta){
+//     console.log(propriedade + " = " + fruta[propriedade])
+// }
+
+class Alimentos {
+    constructor(nome,cor,peso,tipo){
+        this.nome=nome.toUpperCase();
+        this.cor=cor.toUpperCase();
+        this.peso=peso
+        this.tipo=tipo
+    }
+    apresentar(){
+    console.log("O(A)" + this.nome + "com a cor:" + this.cor + "e o peso de:" + this.peso + "do tipo:" + this.tipo)
+    }
 }
+let fruta1 = new Alimentos("Banana","Amarela", 150, "Fruta")
+let legume1= new Alimentos("Pepino","Verde",90,"Legume")
+
+fruta1.apresentar()
+legume1.apresentar()
