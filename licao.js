@@ -202,19 +202,48 @@
 //     console.log(propriedade + " = " + fruta[propriedade])
 // }
 
-class Alimentos {
-    constructor(nome,cor,peso,tipo){
-        this.nome=nome.toUpperCase();
-        this.cor=cor.toUpperCase();
-        this.peso=peso
-        this.tipo=tipo
-    }
-    apresentar(){
-    console.log("O(A)" + this.nome + "com a cor:" + this.cor + "e o peso de:" + this.peso + "do tipo:" + this.tipo)
-    }
-}
-let fruta1 = new Alimentos("Banana","Amarela", 150, "Fruta")
-let legume1= new Alimentos("Pepino","Verde",90,"Legume")
+// class Alimentos {
+//     constructor(nome,cor,peso,tipo){
+//         this.nome=nome.toUpperCase();
+//         this.cor=cor.toUpperCase();
+//         this.peso=peso
+//         this.tipo=tipo
+//     }
+//     apresentar(){
+//     console.log("O(A)" + this.nome + "com a cor:" + this.cor + "e o peso de:" + this.peso + "do tipo:" + this.tipo)
+//     }
+// }
+// let fruta1 = new Alimentos("Banana","Amarela", 150, "Fruta")
+// let legume1= new Alimentos("Pepino","Verde",90,"Legume")
 
-fruta1.apresentar()
-legume1.apresentar()
+// fruta1.apresentar()
+// legume1.apresentar()
+
+let Cronometro = {
+    tempo: 0,
+    ligado: true,
+
+    iniciar: function() {
+        this.tempo = 0;
+        this.ligado = true;
+        console.log("Cronometro iniciado.");
+    },
+
+    avancarTempo: function(tempo) {
+        if (this.ligado) {
+            this.tempo += tempo;
+            console.log("Tempo avançado no Cronometro para " + this.tempo);
+        } else {
+            console.log("O Cronometro está desligado. Ligue-o antes de avançar o tempo.");
+        }
+    },
+
+    desligar: function() {
+        this.ligado = false;
+        console.log("Cronometro desligado.");
+    }
+};
+
+Cronometro.iniciar();
+Cronometro.avancarTempo(60);
+Cronometro.desligar();
