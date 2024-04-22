@@ -219,31 +219,60 @@
 // fruta1.apresentar()
 // legume1.apresentar()
 
-let Cronometro = {
-    tempo: 0,
-    ligado: true,
+// let Cronometro = {
+//     tempo: 0,
+//     ligado: true,
 
-    iniciar: function() {
-        this.tempo = 0;
-        this.ligado = true;
-        console.log("Cronometro iniciado.");
-    },
+//     iniciar: function() {
+//         this.tempo = 0;
+//         this.ligado = true;
+//         console.log("Cronometro iniciado.");
+//     },
 
-    avancarTempo: function(tempo) {
-        if (this.ligado) {
-            this.tempo += tempo;
-            console.log("Tempo avançado no Cronometro para " + this.tempo);
-        } else {
-            console.log("O Cronometro está desligado. Ligue-o antes de avançar o tempo.");
-        }
-    },
+//     avancarTempo: function(tempo) {
+//         if (this.ligado) {
+//             this.tempo += tempo;
+//             console.log("Tempo avançado no Cronometro para " + this.tempo);
+//         } else {
+//             console.log("O Cronometro está desligado. Ligue-o antes de avançar o tempo.");
+//         }
+//     },
 
-    desligar: function() {
-        this.ligado = false;
-        console.log("Cronometro desligado.");
-    }
-};
+//     desligar: function() {
+//         this.ligado = false;
+//         console.log("Cronometro desligado.");
+//     }
+// };
 
-Cronometro.iniciar();
-Cronometro.avancarTempo(60);
-Cronometro.desligar();
+// Cronometro.iniciar();
+// Cronometro.avancarTempo(60);
+// Cronometro.desligar();
+
+// let cores = []
+// for (let i = 0; i < 5; i++) {
+//   let cor = prompt(`Digite a cor ${i + 1}: `)
+//   cores.push(cor)
+// }
+// console.log("Array completo:: ", cores)
+// console.log("Tamnho do array: ", cores.length)
+
+// let corRemover = prompt("Digite a cor a ser removida: ")
+// let indexRemover = cores.indexOf(corRemover)
+// if (indexRemover != -1) {
+//   cores.splice(indexRemover, 1)
+//   console.log( `A cor ${corRemover} foi removida`)
+// } else {
+//   console.log( `A cor ${corRemover} não foi encontrada no array`)
+// }
+// cores.forEach((cor, index) => {
+//   console.log(`Na posição ${index} temos a cor ${cor}`)
+// })
+
+// let novaCor = prompt("Digite uma nova cor")
+// if (!cores.includes(novaCor)) {
+//   cores.unshift(novaCor)
+//   console.log(`A cor ${novaCor} foi inserida na primeira posição`)
+// } else {
+//   console.log(`A cor ${novaCor} ja existe no array`)
+// }
+// console.log(cores)
