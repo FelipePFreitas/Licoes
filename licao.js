@@ -276,3 +276,17 @@
 //   console.log(`A cor ${novaCor} ja existe no array`)
 // }
 // console.log(cores)
+
+
+let nomes = [];
+let nome = prompt("Digite um nome ou 'fim' para sair:");
+
+while (nome !== "fim") {
+    nomes.push(nome);
+    nome = prompt("Digite outro nome ou 'fim' para sair:");
+}
+
+for (let i = 0; i < nomes.length; i++) {
+    console.log(nomes[i]);
+}
+
