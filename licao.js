@@ -44,7 +44,7 @@
 //          console.log(numero, "-> Família não identificada");
 //         }
 //     }
-    
+
 //     verificaFamilia30(30) 
 //     verificaFamilia30(35)
 //     verificaFamilia30(20)
@@ -278,15 +278,23 @@
 // console.log(cores)
 
 
-let nomes = [];
-let nome = prompt("Digite um nome ou 'fim' para sair:");
+// let nomes = [];
+// let nome = prompt("Digite um nome ou 'fim' para sair:");
 
-while (nome !== "fim") {
-    nomes.push(nome);
-    nome = prompt("Digite outro nome ou 'fim' para sair:");
-}
+// while (nome !== "fim") {
+//     nomes.push(nome);
+//     nome = prompt("Digite outro nome ou 'fim' para sair:");
+// }
 
-for (let i = 0; i < nomes.length; i++) {
-    console.log(nomes[i]);
-}
+// for (let i = 0; i < nomes.length; i++) {
+//     console.log(nomes[i]);
+// }
 
+// let mesesAno = []
+// let entrada = prompt ("Digite todos meses e digite fim no final para encerrar")
+// while (entrada !== "fim"){
+//     mesesAno.push(entrada);
+//     entrada = prompt ("Digite todos meses e digite fim no final para encerrar")
+// }
+// console.log(mesesAno)
+// console.log(`Tamanho do Array : ${mesesAno.length}`)
